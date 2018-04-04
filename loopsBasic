@@ -1,0 +1,11 @@
+echo "Enter Value"
+read value
+
+looper=1
+echo "Start loop"
+
+while [ $looper -le $value ]
+do
+	echo "${looper}"
+	((looper++))
+done

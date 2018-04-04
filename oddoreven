@@ -4,7 +4,7 @@ read firstNo
 echo "Please enter your second number"
 read secondNo
 
-value= $(($firstNo + $secondNo))
+value=$(($firstNo + $secondNo))
 echo "Sum Value is ${value}"
 
 if [ $((value%2)) -eq 0 ]
