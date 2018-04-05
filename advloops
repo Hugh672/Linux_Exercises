@@ -1,0 +1,25 @@
+#!/bin/bash
+
+x=1
+while [ $x -le 30 ]
+do
+	if [[ 0 -eq "($x%3) + ($x%5)" ]]
+	then
+	echo "Fizz Buzz"
+
+	elif [[ 0 -eq "($x%5)" ]]
+	then
+	echo "Buzz"
+
+	elif [[ 0 -eq "($x%3)" ]]
+        then
+        echo "Fizz"
+
+	else
+	echo "$x"
+	
+	fi
+	x=$(( $x + 1))
+done
+
+
